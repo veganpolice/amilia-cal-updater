@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { CalendarDays, Upload, List, Download } from 'lucide-react';
 import ErrorBoundary from './components/ErrorBoundary';
 import Calendar from './components/Calendar';
@@ -15,6 +15,27 @@ const App: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<'list' | 'calendar' | 'update'>('calendar');
   const [currentMonth, setCurrentMonth] = useState(new Date());
+
+  useEffect(() => {
+    const storedClasses = localStorage.getItem('amilia-classes');
+    if (storedClasses) {
+      try {
+        const parsed = JSON.parse(storedClasses) as AmiliaResponse;
+        const sortedActivities = [...parsed.Items].sort((a, b) => 
+          new Date(a.StartDate).getTime() - new Date(b.StartDate).getTime()
+        );
+        setActivities(sortedActivities);
+        
+        const allOccurrences = sortedActivities.flatMap(activity => 
+          generateOccurrences(activity)
+        );
+        setOccurrences(allOccurrences);
+      } catch (err) {
+        console.error('Error loading stored classes:', err);
+        setError('Failed to load stored classes');
+      }
+    }
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -61,7 +82,18 @@ const App: React.FC = () => {
           </div>
 
           {viewMode === 'update' ? (
-            <UpdatePage />
+            <UpdatePage onClassesUpdate={(classes) => {
+              localStorage.setItem('amilia-classes', JSON.stringify(classes));
+              const sortedActivities = [...classes.Items].sort((a, b) => 
+                new Date(a.StartDate).getTime() - new Date(b.StartDate).getTime()
+              );
+              setActivities(sortedActivities);
+              const allOccurrences = sortedActivities.flatMap(activity => 
+                generateOccurrences(activity)
+              );
+              setOccurrences(allOccurrences);
+              setViewMode('calendar');
+            }} />
           ) : (
             <>
               {error && (
