@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import { Lock, Mail, Loader2 } from 'lucide-react';
+import { AmiliaResponse } from '../types';
 
-const UpdatePage: React.FC = () => {
+interface UpdatePageProps {
+  onClassesUpdate: (classes: AmiliaResponse) => void;
+}
+
+const UpdatePage: React.FC<UpdatePageProps> = ({ onClassesUpdate }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -53,7 +58,7 @@ const UpdatePage: React.FC = () => {
       }
 
       const data = await response.json();
-      console.log('Classes data:', data);
+      onClassesUpdate(data);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to fetch classes');
     } finally {
