@@ -4,13 +4,28 @@ import { formatInstructor } from './formatUtils';
 
 const LOCATION = 'Create Makerspace, 39449 Queens Way #1, Squamish, BC V8B 0R5';
 
+const formatDate = (date: Date): string => {
+  return date.toISOString().split('T')[0]; // This naturally includes dashes (YYYY-MM-DD)
+};
+
+const downloadIcsContent = (content: string, filename: string) => {
+  const blob = new Blob([content], { type: 'text/calendar' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+};
+
 export const downloadIcsFile = (occurrences: ActivityOccurrence[]) => {
   const events = occurrences.map(occurrence => {
     const date = occurrence.date;
     const [startHours, startMinutes] = occurrence.timeRange.start.replace(/[ap]m/i, '').split(':').map(Number);
     const [endHours, endMinutes] = occurrence.timeRange.end.replace(/[ap]m/i, '').split(':').map(Number);
     
-    // Adjust hours for PM times
     const adjustedStartHours = occurrence.timeRange.start.toLowerCase().includes('pm') && startHours !== 12 
       ? startHours + 12 
       : startHours;
@@ -54,14 +69,21 @@ export const downloadIcsFile = (occurrences: ActivityOccurrence[]) => {
       return;
     }
 
-    const blob = new Blob([value], { type: 'text/calendar' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = 'activities.ics';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
+    if (!value) return;
+
+    const today = formatDate(new Date());
+    
+    // Download regular calendar
+    downloadIcsContent(value, `amilia-cal-${today}.ics`);
+    
+    // Create and download cancelled events calendar
+    const cancelledContent = value.split('\n').map(line => {
+      if (line.trim() === 'END:VEVENT') {
+        return 'STATUS:CANCELLED\n' + line;
+      }
+      return line;
+    }).join('\n');
+    
+    downloadIcsContent(cancelledContent, `amilia-cal-${today}-remove.ics`);
   });
 };
