@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cms-white text-cms-black;
+  }
+}
+
+@layer components {
+  .action-button {
+    @apply flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all duration-200 
+           bg-primary hover:bg-primary-dark text-cms-white transform hover:-translate-y-0.5;
+  }
+
+  .view-button {
+    @apply flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all duration-200 
+           transform hover:-translate-y-0.5;
+  }
+
+  .calendar-cell {
+    @apply bg-cms-white border-t first:border-l hover:bg-gray-50 transition-colors duration-200 min-h-[12rem] max-h-[12rem] overflow-y-auto relative;
+  }
+
+  .nav-button {
+    @apply p-2 rounded-full hover:bg-gray-100 transition-all duration-200 text-cms-black;
+  }
+
+  .activity-card {
+    @apply bg-cms-white rounded-xl shadow-sm border border-primary/20 p-6 
+           hover:shadow-lg transition-all duration-200;
+  }
+
+  .book-now-link {
+    @apply inline-flex items-center text-primary hover:text-primary-dark 
+           transition-colors duration-200 font-medium hover:underline;
+  }
+
+  .main-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12;
+  }
+
+  .page-title {
+    @apply text-4xl font-bold text-cms-black mb-8;
+  }
+
+  .textarea-input {
+    @apply w-full h-48 p-4 border rounded-lg mb-4 font-mono text-sm border-primary/30
+           focus:ring-primary focus:border-primary transition-colors duration-200;
+  }
+
+  .calendar-header {
+    @apply bg-primary/5 text-center text-sm font-semibold text-cms-black p-2;
+  }
+
+  .calendar-event {
+    @apply text-xs p-2 mb-1 bg-primary/5 rounded-md border border-primary/20 
+           hover:bg-primary/10 transition-all duration-200 relative;
+  }
+
+  .calendar-event-content {
+    @apply relative z-10;
+  }
+
+  .calendar-event:hover .calendar-event-content {
+    @apply invisible;
+  }
+
+  .calendar-event-expanded {
+    @apply fixed bg-white shadow-xl rounded-md p-3 border border-primary/20
+           transition-all duration-200 z-50 w-[280px] opacity-0 invisible
+           transform scale-95 origin-top-left;
+  }
+
+  .calendar-event:hover .calendar-event-expanded {
+    @apply opacity-100 visible scale-100;
+  }
+
+  .calendar-event:hover .book-now-link {
+    @apply opacity-100;
+  }
+
+  .calendar-day {
+    @apply font-semibold text-cms-black mb-1;
+  }
+
+  .calendar-time {
+    @apply text-cms-black/70 mt-0.5;
+  }
+
+  .calendar-instructor {
+    @apply text-cms-black/50 mt-0.5 truncate;
+  }
+
+  .activity-title {
+    @apply text-base font-medium text-cms-black leading-tight flex items-center gap-1;
+  }
+
+  .calendar-title {
+    @apply truncate text-sm font-medium flex-1;
+  }
+
+  .calendar-title-expanded {
+    @apply text-sm font-medium text-cms-black whitespace-normal leading-tight;
+  }
+
+  .list-activity-title {
+    @apply text-xl font-bold text-cms-black flex items-center gap-2;
+  }
+
+  .calendar-book-now {
+    @apply book-now-link mt-1 inline-flex items-center opacity-0 transition-opacity duration-200;
+  }
+}

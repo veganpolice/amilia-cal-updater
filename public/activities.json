@@ -1,0 +1,1909 @@
+{
+    "Items": [
+        {
+            "Tags": [],
+            "Description": "",
+            "Prerequisite": "",
+            "Note": null,
+            "ThirdPartyUrl": null,
+            "AdditionalInformation": "",
+            "ResponsibleName": "",
+            "Price": 275.0000,
+            "DropInPrice": 0.0,
+            "DisplayOrder": 1,
+            "Age": {
+                "Max": 15,
+                "Min": 10,
+                "Months": false
+            },
+            "MaxAttendance": 8,
+            "SpotsRemaining": 4,
+            "SpotsReserved": 4,
+            "NumberOfOccurrences": 5,
+            "StartDate": "2024-10-07T15:30:00-07:00",
+            "EndDate": "2024-11-04T18:00:00-08:00",
+            "ScheduleSummary": "Mondays, 3:30 PM - 6:00 PM",
+            "HasSessionEnabled": true,
+            "HasDropInEnabled": false,
+            "AgeSummary": "10-15",
+            "Keywords": [],
+            "Groups": [],
+            "OrganizationId": 17659,
+            "RegistrationPeriods": [
+                {
+                    "Id": 8255538,
+                    "StartTime": "2024-09-01T09:00:00-07:00",
+                    "EndTime": "2024-10-06T17:00:00-07:00",
+                    "RegistrationCriterionType": "Everyone",
+                    "ResidencyName": null
+                }
+            ],
+            "LocationLabel": "",
+            "Forms": [
+                {
+                    "Id": 50963,
+                    "Type": "Adult",
+                    "Name": "Default adult form"
+                },
+                {
+                    "Id": 50964,
+                    "Type": "Children",
+                    "Name": "Default child form"
+                }
+            ],
+            "SecretUrl": "https://app.amilia.com/store/en/create-makerspace/api/Activity/Detail?activityId=yn6JBJP",
+            "PictureUrl": "https://ebca2c49e86e4d796926-f981d70e68c893755bd9413a024beb5d.ssl.cf2.rackcdn.com//c6831c61-2a18-4159-977c-d79d293cdfeb_Woodworking_Summer_Camp3.jpg",
+            "Schedules": [
+                {
+                    "TimePeriod": {
+                        "StartTime": "15:30:00",
+                        "EndTime": "18:00:00",
+                        "StartDate": "2024-10-07T00:00:00",
+                        "EndDate": null,
+                        "NumberOfOccurence": 5,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "RepeatNTimes",
+                        "Days": [
+                            "Monday"
+                        ],
+                        "RecurrenceUnitType": "week",
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68556314,
+                            "FirstName": "Jason",
+                            "LastName": "Bigelow",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923752,
+                            "Name": "Wood shop"
+                        }
+                    ]
+                }
+            ],
+            "Id": 5485607,
+            "Name": "After School Woodworking Program (October 2024)",
+            "ProgramId": 107638,
+            "ProgramName": "Classes and Workshops",
+            "CategoryId": 5485605,
+            "CategoryName": "Kids Classes",
+            "SubCategoryId": 5485606,
+            "SubCategoryName": "Wood Shop",
+            "Url": "https://app.amilia.com/store/en/create-makerspace/shop/activities/5485607",
+            "Status": "Normal"
+        },
+        {
+            "Tags": [],
+            "Description": "",
+            "Prerequisite": "None",
+            "Note": null,
+            "ThirdPartyUrl": null,
+            "AdditionalInformation": "",
+            "ResponsibleName": "",
+            "Price": 0.0000,
+            "DropInPrice": 90.0000,
+            "DisplayOrder": 1,
+            "Age": null,
+            "MaxAttendance": 2147483647,
+            "SpotsRemaining": null,
+            "SpotsReserved": 0,
+            "NumberOfOccurrences": 2,
+            "StartDate": "2024-11-14T18:00:00-08:00",
+            "EndDate": "2024-12-04T21:00:00-08:00",
+            "ScheduleSummary": "Thursday, November 14, 2024, 6:00 PM - 9:00 PM, First Wednesday of every month, 6:00 PM - 9:00 PM",
+            "HasSessionEnabled": false,
+            "HasDropInEnabled": true,
+            "AgeSummary": "",
+            "Keywords": [],
+            "Groups": [],
+            "OrganizationId": 17659,
+            "RegistrationPeriods": [],
+            "LocationLabel": "",
+            "Forms": [
+                {
+                    "Id": 50963,
+                    "Type": "Adult",
+                    "Name": "Default adult form"
+                },
+                {
+                    "Id": 50964,
+                    "Type": "Children",
+                    "Name": "Default child form"
+                }
+            ],
+            "SecretUrl": "https://app.amilia.com/store/en/create-makerspace/api/Activity/Detail?activityId=xAo9doo",
+            "PictureUrl": "https://8d02f226e7fac438d147-dbf8020f06ec9db8728d217aa41a47fe.ssl.cf2.rackcdn.com//5bd0cd86-99b1-4c80-9585-fa0c0229c1e1_Moriah_Textile_Class_Pictures_by_Moriah_Macmillan4.jpg",
+            "Schedules": [
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:00:00",
+                        "StartDate": "2024-11-14T00:00:00",
+                        "EndDate": "2024-11-14T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68613662,
+                            "FirstName": "Moriah",
+                            "LastName": "MacMillan",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923755,
+                            "Name": "Textiles studio"
+                        }
+                    ]
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:00:00",
+                        "StartDate": "2024-12-04T00:00:00",
+                        "EndDate": null,
+                        "NumberOfOccurence": 4,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "RepeatNTimes",
+                        "Days": [],
+                        "RecurrenceUnitType": "month",
+                        "MonthType": "DayOfTheWeek"
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68613662,
+                            "FirstName": "Moriah",
+                            "LastName": "MacMillan",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923755,
+                            "Name": "Textiles studio"
+                        }
+                    ]
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:00:00",
+                        "StartDate": "2025-01-01T00:00:00",
+                        "EndDate": "2025-01-01T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68613662,
+                            "FirstName": "Moriah",
+                            "LastName": "MacMillan",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923755,
+                            "Name": "Textiles studio"
+                        }
+                    ]
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:00:00",
+                        "StartDate": "2025-02-05T00:00:00",
+                        "EndDate": "2025-02-05T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68613662,
+                            "FirstName": "Moriah",
+                            "LastName": "MacMillan",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923755,
+                            "Name": "Textiles studio"
+                        }
+                    ]
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:00:00",
+                        "StartDate": "2025-03-05T00:00:00",
+                        "EndDate": "2025-03-05T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68613662,
+                            "FirstName": "Moriah",
+                            "LastName": "MacMillan",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923755,
+                            "Name": "Textiles studio"
+                        }
+                    ]
+                }
+            ],
+            "Id": 5525389,
+            "Name": "Textiles level 1 - Tote Bag",
+            "ProgramId": 107638,
+            "ProgramName": "Classes and Workshops",
+            "CategoryId": 5525396,
+            "CategoryName": "Textiles",
+            "SubCategoryId": 5525397,
+            "SubCategoryName": "Project classes",
+            "Url": "https://app.amilia.com/store/en/create-makerspace/shop/activities/5525389",
+            "Status": "Normal"
+        },
+        {
+            "Tags": [],
+            "Description": "",
+            "Prerequisite": "We recommend students to either have taken Textiles 1, or be familiar with using the basic function of a home sewing machine (threading the machine and straight stitching).",
+            "Note": null,
+            "ThirdPartyUrl": null,
+            "AdditionalInformation": "",
+            "ResponsibleName": "",
+            "Price": 180.0000,
+            "DropInPrice": 0.0,
+            "DisplayOrder": 2,
+            "Age": null,
+            "MaxAttendance": 6,
+            "SpotsRemaining": 6,
+            "SpotsReserved": 0,
+            "NumberOfOccurrences": 3,
+            "StartDate": "2024-11-18T17:30:00-08:00",
+            "EndDate": "2024-12-02T20:30:00-08:00",
+            "ScheduleSummary": "Mondays, 5:30 PM - 8:30 PM",
+            "HasSessionEnabled": true,
+            "HasDropInEnabled": false,
+            "AgeSummary": "",
+            "Keywords": [],
+            "Groups": [],
+            "OrganizationId": 17659,
+            "RegistrationPeriods": [
+                {
+                    "Id": 8319783,
+                    "StartTime": "2024-08-11T09:00:00-07:00",
+                    "EndTime": "2030-12-31T17:00:00-08:00",
+                    "RegistrationCriterionType": "Everyone",
+                    "ResidencyName": null
+                }
+            ],
+            "LocationLabel": "",
+            "Forms": [
+                {
+                    "Id": 50963,
+                    "Type": "Adult",
+                    "Name": "Default adult form"
+                },
+                {
+                    "Id": 50964,
+                    "Type": "Children",
+                    "Name": "Default child form"
+                }
+            ],
+            "SecretUrl": "https://app.amilia.com/store/en/create-makerspace/api/Activity/Detail?activityId=yQ9Q39B",
+            "PictureUrl": "https://8194c56e40300229278f-f14888355d33ddfa61d3ce2893e178c8.ssl.cf2.rackcdn.com//9077471f-0d64-4ded-89d3-dd239d57c688_loungepants1.jpg",
+            "Schedules": [
+                {
+                    "TimePeriod": {
+                        "StartTime": "17:30:00",
+                        "EndTime": "20:30:00",
+                        "StartDate": "2024-11-18T00:00:00",
+                        "EndDate": null,
+                        "NumberOfOccurence": 3,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "RepeatNTimes",
+                        "Days": [
+                            "Monday"
+                        ],
+                        "RecurrenceUnitType": "week",
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68613661,
+                            "FirstName": "Keenan",
+                            "LastName": "Way",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923755,
+                            "Name": "Textiles studio"
+                        }
+                    ]
+                }
+            ],
+            "Id": 5525392,
+            "Name": "Textiles - Lounge Pants",
+            "ProgramId": 107638,
+            "ProgramName": "Classes and Workshops",
+            "CategoryId": 5525396,
+            "CategoryName": "Textiles",
+            "SubCategoryId": 5525397,
+            "SubCategoryName": "Project classes",
+            "Url": "https://app.amilia.com/store/en/create-makerspace/shop/activities/5525392",
+            "Status": "Normal"
+        },
+        {
+            "Tags": [],
+            "Description": "",
+            "Prerequisite": "We recommend students to either have taken Textiles 1, or be familiar with using the basic function of a home sewing machine (threading the machine and straight stitching).",
+            "Note": null,
+            "ThirdPartyUrl": null,
+            "AdditionalInformation": "",
+            "ResponsibleName": "",
+            "Price": 180.0000,
+            "DropInPrice": 0.0,
+            "DisplayOrder": 3,
+            "Age": null,
+            "MaxAttendance": 6,
+            "SpotsRemaining": 4,
+            "SpotsReserved": 2,
+            "NumberOfOccurrences": 3,
+            "StartDate": "2024-10-16T17:30:00-07:00",
+            "EndDate": "2024-10-30T20:30:00-07:00",
+            "ScheduleSummary": "Wednesdays, 5:30 PM - 8:30 PM",
+            "HasSessionEnabled": true,
+            "HasDropInEnabled": false,
+            "AgeSummary": "",
+            "Keywords": [],
+            "Groups": [],
+            "OrganizationId": 17659,
+            "RegistrationPeriods": [
+                {
+                    "Id": 8319784,
+                    "StartTime": "2024-08-11T09:00:00-07:00",
+                    "EndTime": "2030-12-31T17:00:00-08:00",
+                    "RegistrationCriterionType": "Everyone",
+                    "ResidencyName": null
+                }
+            ],
+            "LocationLabel": "",
+            "Forms": [
+                {
+                    "Id": 50963,
+                    "Type": "Adult",
+                    "Name": "Default adult form"
+                },
+                {
+                    "Id": 50964,
+                    "Type": "Children",
+                    "Name": "Default child form"
+                }
+            ],
+            "SecretUrl": "https://app.amilia.com/store/en/create-makerspace/api/Activity/Detail?activityId=kMQB5Qv",
+            "PictureUrl": "https://9a8bd3d5d209f21c039f-af8cf7d2b514fe412fe3d15a8eb58928.ssl.cf2.rackcdn.com//f75758d3-68de-4347-bc15-534b6b7bbe71_RaeFallon_LaurenBoyle_0061_1024x10242x.webp",
+            "Schedules": [
+                {
+                    "TimePeriod": {
+                        "StartTime": "17:30:00",
+                        "EndTime": "20:30:00",
+                        "StartDate": "2024-10-16T00:00:00",
+                        "EndDate": null,
+                        "NumberOfOccurence": 3,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "RepeatNTimes",
+                        "Days": [
+                            "Wednesday"
+                        ],
+                        "RecurrenceUnitType": "week",
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68613661,
+                            "FirstName": "Keenan",
+                            "LastName": "Way",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923755,
+                            "Name": "Textiles studio"
+                        }
+                    ]
+                }
+            ],
+            "Id": 5525394,
+            "Name": "Textiles - T-shirt Workshop",
+            "ProgramId": 107638,
+            "ProgramName": "Classes and Workshops",
+            "CategoryId": 5525396,
+            "CategoryName": "Textiles",
+            "SubCategoryId": 5525397,
+            "SubCategoryName": "Project classes",
+            "Url": "https://app.amilia.com/store/en/create-makerspace/shop/activities/5525394",
+            "Status": "Normal"
+        },
+        {
+            "Tags": [],
+            "Description": "",
+            "Prerequisite": "None - everyone is welcome!",
+            "Note": "",
+            "ThirdPartyUrl": null,
+            "AdditionalInformation": "CNC Router Level 1 Presentation https://docs.google.com/presentation/d/1yBvPwfKfHI2XRqHFlS_2OgaK2vEy",
+            "ResponsibleName": "Oscar",
+            "Price": 0.0000,
+            "DropInPrice": 120.0000,
+            "DisplayOrder": 1,
+            "Age": null,
+            "MaxAttendance": 2147483647,
+            "SpotsRemaining": null,
+            "SpotsReserved": 0,
+            "NumberOfOccurrences": 2,
+            "StartDate": "2024-11-03T09:00:00-08:00",
+            "EndDate": "2024-12-03T21:30:00-08:00",
+            "ScheduleSummary": "Sunday, November 3, 2024, 9:00 AM - 12:30 PM, Tuesday, December 3, 2024, 6:00 PM - 9:30 PM",
+            "HasSessionEnabled": false,
+            "HasDropInEnabled": true,
+            "AgeSummary": "",
+            "Keywords": [],
+            "Groups": [],
+            "OrganizationId": 17659,
+            "RegistrationPeriods": [
+                {
+                    "Id": 8319785,
+                    "StartTime": "2024-08-01T09:00:00-07:00",
+                    "EndTime": "2030-12-31T17:00:00-08:00",
+                    "RegistrationCriterionType": "Everyone",
+                    "ResidencyName": null
+                }
+            ],
+            "LocationLabel": "",
+            "Forms": [
+                {
+                    "Id": 50963,
+                    "Type": "Adult",
+                    "Name": "Default adult form"
+                },
+                {
+                    "Id": 50964,
+                    "Type": "Children",
+                    "Name": "Default child form"
+                }
+            ],
+            "SecretUrl": "https://app.amilia.com/store/en/create-makerspace/api/Activity/Detail?activityId=y2pPMdl",
+            "PictureUrl": "https://9e3b8a335068841344a4-e51fc8fe2d591010ada383e23b0c4919.ssl.cf2.rackcdn.com//6487bf6a-2a4c-41f4-a5f2-e966fe3f8f2d_cnc_router_square_1.jpg",
+            "Schedules": [
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:30:00",
+                        "StartDate": "2024-12-03T00:00:00",
+                        "EndDate": "2024-12-03T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 67360329,
+                            "FirstName": "Oscar",
+                            "LastName": "Radevsky",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923753,
+                            "Name": "CNC router"
+                        }
+                    ]
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "09:00:00",
+                        "EndTime": "12:30:00",
+                        "StartDate": "2024-11-03T00:00:00",
+                        "EndDate": "2024-11-03T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 67360329,
+                            "FirstName": "Oscar",
+                            "LastName": "Radevsky",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923753,
+                            "Name": "CNC router"
+                        }
+                    ]
+                }
+            ],
+            "Id": 5525519,
+            "Name": "CNC Router Level 1",
+            "ProgramId": 107638,
+            "ProgramName": "Classes and Workshops",
+            "CategoryId": 5525523,
+            "CategoryName": "CNC, Laser & 3D Printer",
+            "SubCategoryId": 5525524,
+            "SubCategoryName": "CNC Router",
+            "Url": "https://app.amilia.com/store/en/create-makerspace/shop/activities/5525519",
+            "Status": "Normal"
+        },
+        {
+            "Tags": [],
+            "Description": "",
+            "Prerequisite": "None",
+            "Note": "Please bring closed toe shoes, remove jewelry, tie back long hair and avoid wearing loose clothing.",
+            "ThirdPartyUrl": null,
+            "AdditionalInformation": "",
+            "ResponsibleName": "",
+            "Price": 0.0000,
+            "DropInPrice": 90.0000,
+            "DisplayOrder": 1,
+            "Age": null,
+            "MaxAttendance": 2147483647,
+            "SpotsRemaining": null,
+            "SpotsReserved": 0,
+            "NumberOfOccurrences": 4,
+            "StartDate": "2024-10-22T18:00:00-07:00",
+            "EndDate": "2025-01-07T21:00:00-08:00",
+            "ScheduleSummary": "Tuesday, October 22, 2024, 6:00 PM - 9:00 PM, Wednesday, November 13, 2024, 6:00 PM - 9:00 PM, Thursday, December 5, 2024, 6:00 PM - 9:00 PM, Tuesday, January 7, 2025, 6:00 PM - 9:00 PM",
+            "HasSessionEnabled": false,
+            "HasDropInEnabled": true,
+            "AgeSummary": "",
+            "Keywords": [],
+            "Groups": [],
+            "OrganizationId": 17659,
+            "RegistrationPeriods": [
+                {
+                    "Id": 8319786,
+                    "StartTime": "2024-08-09T09:00:00-07:00",
+                    "EndTime": "2030-12-31T12:00:00-08:00",
+                    "RegistrationCriterionType": "Everyone",
+                    "ResidencyName": null
+                }
+            ],
+            "LocationLabel": "",
+            "Forms": [
+                {
+                    "Id": 50963,
+                    "Type": "Adult",
+                    "Name": "Default adult form"
+                },
+                {
+                    "Id": 50964,
+                    "Type": "Children",
+                    "Name": "Default child form"
+                }
+            ],
+            "SecretUrl": "https://app.amilia.com/store/en/create-makerspace/api/Activity/Detail?activityId=ydzJ69z",
+            "PictureUrl": "https://6be31d0d4fa7c9292b21-2835742985ebe6ebfa4f4bd3d59857ab.ssl.cf2.rackcdn.com//a8b43e46-00b7-430f-95a6-94dd524d7511_Laser_cutter_1.jpg",
+            "Schedules": [
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:00:00",
+                        "StartDate": "2024-10-22T00:00:00",
+                        "EndDate": "2024-10-22T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 67360329,
+                            "FirstName": "Oscar",
+                            "LastName": "Radevsky",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923754,
+                            "Name": "Laser"
+                        }
+                    ]
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:00:00",
+                        "StartDate": "2024-11-13T00:00:00",
+                        "EndDate": "2024-11-13T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 67360329,
+                            "FirstName": "Oscar",
+                            "LastName": "Radevsky",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923754,
+                            "Name": "Laser"
+                        }
+                    ]
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:00:00",
+                        "StartDate": "2024-12-05T00:00:00",
+                        "EndDate": "2024-12-05T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 67360329,
+                            "FirstName": "Oscar",
+                            "LastName": "Radevsky",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923754,
+                            "Name": "Laser"
+                        }
+                    ]
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:00:00",
+                        "StartDate": "2025-01-07T00:00:00",
+                        "EndDate": "2025-01-07T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 67360329,
+                            "FirstName": "Oscar",
+                            "LastName": "Radevsky",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923754,
+                            "Name": "Laser"
+                        }
+                    ]
+                }
+            ],
+            "Id": 5525521,
+            "Name": "Laser Level 1",
+            "ProgramId": 107638,
+            "ProgramName": "Classes and Workshops",
+            "CategoryId": 5525523,
+            "CategoryName": "CNC, Laser & 3D Printer",
+            "SubCategoryId": 5525525,
+            "SubCategoryName": "Laser",
+            "Url": "https://app.amilia.com/store/en/create-makerspace/shop/activities/5525521",
+            "Status": "Normal"
+        },
+        {
+            "Tags": [],
+            "Description": "",
+            "Prerequisite": "None",
+            "Note": null,
+            "ThirdPartyUrl": null,
+            "AdditionalInformation": "",
+            "ResponsibleName": "",
+            "Price": 0.0000,
+            "DropInPrice": 90.0000,
+            "DisplayOrder": 1,
+            "Age": null,
+            "MaxAttendance": 2147483647,
+            "SpotsRemaining": null,
+            "SpotsReserved": 0,
+            "NumberOfOccurrences": 2,
+            "StartDate": "2024-10-24T18:00:00-07:00",
+            "EndDate": "2024-11-19T21:00:00-08:00",
+            "ScheduleSummary": "Thursday, October 24, 2024, 6:00 PM - 9:00 PM, Tuesday, November 19, 2024, 6:00 PM - 9:00 PM",
+            "HasSessionEnabled": false,
+            "HasDropInEnabled": true,
+            "AgeSummary": "",
+            "Keywords": [],
+            "Groups": [],
+            "OrganizationId": 17659,
+            "RegistrationPeriods": [
+                {
+                    "Id": 8320399,
+                    "StartTime": "2024-10-01T09:00:00-07:00",
+                    "EndTime": "2030-12-31T17:00:00-08:00",
+                    "RegistrationCriterionType": "Everyone",
+                    "ResidencyName": null
+                },
+                {
+                    "Id": 8320400,
+                    "StartTime": "2024-10-01T09:00:00-07:00",
+                    "EndTime": "2030-12-31T17:00:00-08:00",
+                    "RegistrationCriterionType": "Everyone",
+                    "ResidencyName": null
+                }
+            ],
+            "LocationLabel": "",
+            "Forms": [
+                {
+                    "Id": 50963,
+                    "Type": "Adult",
+                    "Name": "Default adult form"
+                },
+                {
+                    "Id": 50964,
+                    "Type": "Children",
+                    "Name": "Default child form"
+                }
+            ],
+            "SecretUrl": "https://app.amilia.com/store/en/create-makerspace/api/Activity/Detail?activityId=yegJ2Xl",
+            "PictureUrl": "https://2198d7dbe421299e9496-c740ebf150d04dd859a8576a34a528e4.ssl.cf2.rackcdn.com//83d13a60-a7ba-498a-91bf-8b4ffff9abac_Square_Metal_Tools_1_2.jpg",
+            "Schedules": [
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:00:00",
+                        "StartDate": "2024-10-24T00:00:00",
+                        "EndDate": "2024-10-24T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68613665,
+                            "FirstName": "Danielle",
+                            "LastName": "Schon",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923751,
+                            "Name": "Metal shop"
+                        }
+                    ]
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:00:00",
+                        "StartDate": "2024-11-19T00:00:00",
+                        "EndDate": "2024-11-19T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68613665,
+                            "FirstName": "Danielle",
+                            "LastName": "Schon",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923751,
+                            "Name": "Metal shop"
+                        }
+                    ]
+                }
+            ],
+            "Id": 5525636,
+            "Name": "Metal Tools Level 1",
+            "ProgramId": 107638,
+            "ProgramName": "Classes and Workshops",
+            "CategoryId": 5525637,
+            "CategoryName": "Metal Shop",
+            "SubCategoryId": 5525638,
+            "SubCategoryName": "Skill classes",
+            "Url": "https://app.amilia.com/store/en/create-makerspace/shop/activities/5525636",
+            "Status": "Normal"
+        },
+        {
+            "Tags": [],
+            "Description": "",
+            "Prerequisite": "None",
+            "Note": null,
+            "ThirdPartyUrl": null,
+            "AdditionalInformation": "",
+            "ResponsibleName": "",
+            "Price": 0.0000,
+            "DropInPrice": 90.0000,
+            "DisplayOrder": 1,
+            "Age": null,
+            "MaxAttendance": 2147483647,
+            "SpotsRemaining": null,
+            "SpotsReserved": 0,
+            "NumberOfOccurrences": 3,
+            "StartDate": "2024-10-05T09:00:00-07:00",
+            "EndDate": "2024-12-03T21:00:00-08:00",
+            "ScheduleSummary": "Saturday, October 5, 2024, 9:00 AM - 12:30 PM, Saturday, November 2, 2024, 12:00 PM - 3:00 PM, Tuesday, December 3, 2024, 6:00 PM - 9:00 PM, Saturday, January 4, 2025, 12:00 PM - 3:00 PM",
+            "HasSessionEnabled": false,
+            "HasDropInEnabled": true,
+            "AgeSummary": "",
+            "Keywords": [],
+            "Groups": [],
+            "OrganizationId": 17659,
+            "RegistrationPeriods": [],
+            "LocationLabel": "",
+            "Forms": [
+                {
+                    "Id": 50963,
+                    "Type": "Adult",
+                    "Name": "Default adult form"
+                },
+                {
+                    "Id": 50964,
+                    "Type": "Children",
+                    "Name": "Default child form"
+                }
+            ],
+            "SecretUrl": "https://app.amilia.com/store/en/create-makerspace/api/Activity/Detail?activityId=yKEjw3w",
+            "PictureUrl": "https://91c9aa9a4f9af1f069e2-f6969f6d747a784a512dff2841c0ae52.ssl.cf2.rackcdn.com//ea7a5b61-8259-4d71-a855-9a270814980f_Square_Woods_tools_Level_1_3.jpg",
+            "Schedules": [
+                {
+                    "TimePeriod": {
+                        "StartTime": "09:00:00",
+                        "EndTime": "12:30:00",
+                        "StartDate": "2024-10-05T00:00:00",
+                        "EndDate": "2024-10-05T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68613659,
+                            "FirstName": "Reese",
+                            "LastName": "Hong",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923752,
+                            "Name": "Wood shop"
+                        }
+                    ]
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "12:00:00",
+                        "EndTime": "15:00:00",
+                        "StartDate": "2024-11-02T00:00:00",
+                        "EndDate": "2024-11-02T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68613659,
+                            "FirstName": "Reese",
+                            "LastName": "Hong",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923752,
+                            "Name": "Wood shop"
+                        }
+                    ]
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:00:00",
+                        "StartDate": "2024-12-03T00:00:00",
+                        "EndDate": "2024-12-03T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68613659,
+                            "FirstName": "Reese",
+                            "LastName": "Hong",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923752,
+                            "Name": "Wood shop"
+                        }
+                    ]
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "12:00:00",
+                        "EndTime": "15:00:00",
+                        "StartDate": "2025-01-04T00:00:00",
+                        "EndDate": "2025-01-04T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68613659,
+                            "FirstName": "Reese",
+                            "LastName": "Hong",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": []
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "12:00:00",
+                        "EndTime": "15:00:00",
+                        "StartDate": "2025-01-04T00:00:00",
+                        "EndDate": "2025-01-04T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68613659,
+                            "FirstName": "Reese",
+                            "LastName": "Hong",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": []
+                }
+            ],
+            "Id": 5525734,
+            "Name": "Wood Tools Level 1",
+            "ProgramId": 107638,
+            "ProgramName": "Classes and Workshops",
+            "CategoryId": 5525740,
+            "CategoryName": "Wood Shop",
+            "SubCategoryId": 5525741,
+            "SubCategoryName": "Skill classes",
+            "Url": "https://app.amilia.com/store/en/create-makerspace/shop/activities/5525734",
+            "Status": "Normal"
+        },
+        {
+            "Tags": [],
+            "Description": "",
+            "Prerequisite": "Wood Tools Level 1",
+            "Note": null,
+            "ThirdPartyUrl": null,
+            "AdditionalInformation": "",
+            "ResponsibleName": "",
+            "Price": 0.0000,
+            "DropInPrice": 90.0000,
+            "DisplayOrder": 2,
+            "Age": null,
+            "MaxAttendance": 2147483647,
+            "SpotsRemaining": null,
+            "SpotsReserved": 0,
+            "NumberOfOccurrences": 2,
+            "StartDate": "2024-11-05T18:00:00-08:00",
+            "EndDate": "2024-11-30T15:00:00-08:00",
+            "ScheduleSummary": "Tuesday, November 5, 2024, 6:00 PM - 9:00 PM, Saturday, November 30, 2024, 12:00 PM - 3:00 PM",
+            "HasSessionEnabled": false,
+            "HasDropInEnabled": true,
+            "AgeSummary": "",
+            "Keywords": [],
+            "Groups": [],
+            "OrganizationId": 17659,
+            "RegistrationPeriods": [],
+            "LocationLabel": "",
+            "Forms": [
+                {
+                    "Id": 50963,
+                    "Type": "Adult",
+                    "Name": "Default adult form"
+                },
+                {
+                    "Id": 50964,
+                    "Type": "Children",
+                    "Name": "Default child form"
+                }
+            ],
+            "SecretUrl": "https://app.amilia.com/store/en/create-makerspace/api/Activity/Detail?activityId=xO9zOed",
+            "PictureUrl": "https://fbb0eeca760b9634827c-80b340d778fc4d061174fb07dc33e561.ssl.cf2.rackcdn.com//c0c6844e-0f76-4c25-a8c3-09be5c4cb24c_Square_Wood_Tools_Level_21.jpg",
+            "Schedules": [
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:00:00",
+                        "StartDate": "2024-11-05T00:00:00",
+                        "EndDate": "2024-11-05T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68613659,
+                            "FirstName": "Reese",
+                            "LastName": "Hong",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923752,
+                            "Name": "Wood shop"
+                        }
+                    ]
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "12:00:00",
+                        "EndTime": "15:00:00",
+                        "StartDate": "2024-11-30T00:00:00",
+                        "EndDate": "2024-11-30T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68613659,
+                            "FirstName": "Reese",
+                            "LastName": "Hong",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923752,
+                            "Name": "Wood shop"
+                        }
+                    ]
+                }
+            ],
+            "Id": 5525735,
+            "Name": "Wood Tools Level 2",
+            "ProgramId": 107638,
+            "ProgramName": "Classes and Workshops",
+            "CategoryId": 5525740,
+            "CategoryName": "Wood Shop",
+            "SubCategoryId": 5525741,
+            "SubCategoryName": "Skill classes",
+            "Url": "https://app.amilia.com/store/en/create-makerspace/shop/activities/5525735",
+            "Status": "Normal"
+        },
+        {
+            "Tags": [],
+            "Description": "<p>Take your wood working skills for a spin on this beginner friendly planter workshop. Over the course of two sessions, participants will make a window planter for 6 pots featuring lap joints, edges profiled with a router, and evenly drilled holes.</p>\n\n<p><strong>Learning Outcomes:</strong><br />\n- Practice repeatable, safe cuts on the table saw<br />\n- Learn various joinery techniques including cutting dado&rsquo;s to create lap joints<br />\n- Advance your table saw knowledge with dado cuts, and the cross-cut sled<br />\n- Practice using the drill press, the table router, and various sanding methods to finish your planter</p>\n",
+            "Prerequisite": "Wood Tools Level 1",
+            "Note": null,
+            "ThirdPartyUrl": null,
+            "AdditionalInformation": "",
+            "ResponsibleName": "",
+            "Price": 150.0000,
+            "DropInPrice": 0.0,
+            "DisplayOrder": 2,
+            "Age": null,
+            "MaxAttendance": 5,
+            "SpotsRemaining": 5,
+            "SpotsReserved": 0,
+            "NumberOfOccurrences": 1,
+            "StartDate": "2025-01-01T12:00:00-08:00",
+            "EndDate": "2025-01-01T15:00:00-08:00",
+            "ScheduleSummary": "Wednesday, January 1, 2025, 12:00 PM - 3:00 PM",
+            "HasSessionEnabled": true,
+            "HasDropInEnabled": false,
+            "AgeSummary": "",
+            "Keywords": [],
+            "Groups": [],
+            "OrganizationId": 17659,
+            "RegistrationPeriods": [],
+            "LocationLabel": "",
+            "Forms": [
+                {
+                    "Id": 50963,
+                    "Type": "Adult",
+                    "Name": "Default adult form"
+                },
+                {
+                    "Id": 50964,
+                    "Type": "Children",
+                    "Name": "Default child form"
+                }
+            ],
+            "SecretUrl": "https://app.amilia.com/store/en/create-makerspace/api/Activity/Detail?activityId=b3dlnQ6",
+            "PictureUrl": null,
+            "Schedules": [
+                {
+                    "TimePeriod": {
+                        "StartTime": "12:00:00",
+                        "EndTime": "15:00:00",
+                        "StartDate": "2025-01-01T00:00:00",
+                        "EndDate": "2025-01-01T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [],
+                    "Locations": []
+                }
+            ],
+            "Id": 5525737,
+            "Name": "Planter Workshop",
+            "ProgramId": 107638,
+            "ProgramName": "Classes and Workshops",
+            "CategoryId": 5525740,
+            "CategoryName": "Wood Shop",
+            "SubCategoryId": 5525742,
+            "SubCategoryName": "Project Classes",
+            "Url": "https://app.amilia.com/store/en/create-makerspace/shop/activities/5525737",
+            "Status": "Hidden"
+        },
+        {
+            "Tags": [],
+            "Description": "<p>This more advanced woodworking course will cover the use of the jointer, planer, table saw, wide belt sander and biscuit jointer. Over the course of three sessions participants will walk away with a cutting board and their certification for Wood Tools 2.</p>\n\n<p><strong>Learning Objectives:</strong></p>\n\n<p>- Safe use of machine tools (including jointer, planer, table saw and biscuit jointer)</p>\n\n<p>- Wood grain education</p>\n\n<p>- Breakout and surfacing of rough sawn solid wood</p>\n\n<p>- Cutting curved shapes using a template and router</p>\n\n<p>Once sanded you can opt for a laser cut image on your board! Ask your instructor for available designs, or design your own and take the <a href=\"https://createmakerspace.com/laser-cutter-level-1\">Laser Cutter Level 1 Class</a> to put your own image on it.</p>\n\n<p><strong>Things to bring:</strong></p>\n\n<p>PPE including:</p>\n\n<ul>\n\t<li>\n\t<p>Safety glasses</p>\n\t</li>\n\t<li>\n\t<p>Hearing protection</p>\n\t</li>\n\t<li>\n\t<p>Closed toe shoes</p>\n\t</li>\n\t<li>\n\t<p>Remove jewelry</p>\n\t</li>\n\t<li>\n\t<p>Tie back long hair&nbsp;</p>\n\t</li>\n\t<li>\n\t<p>No loose clothing</p>\n\t</li>\n\t<li>\n\t<p>Dust mask (optional)</p>\n\t</li>\n</ul>\n",
+            "Prerequisite": "Wood tools level 1",
+            "Note": null,
+            "ThirdPartyUrl": null,
+            "AdditionalInformation": "",
+            "ResponsibleName": "",
+            "Price": 175.0000,
+            "DropInPrice": 0.0,
+            "DisplayOrder": 3,
+            "Age": null,
+            "MaxAttendance": 6,
+            "SpotsRemaining": 6,
+            "SpotsReserved": 0,
+            "NumberOfOccurrences": 3,
+            "StartDate": "2024-10-06T18:00:00-07:00",
+            "EndDate": "2024-10-27T21:00:00-07:00",
+            "ScheduleSummary": "Sunday, October 6, 2024, 6:00 PM - 9:00 PM, Sunday, October 20, 2024, 6:00 PM - 9:00 PM, Sunday, October 27, 2024, 6:00 PM - 9:00 PM",
+            "HasSessionEnabled": true,
+            "HasDropInEnabled": false,
+            "AgeSummary": "",
+            "Keywords": [
+                {
+                    "Id": 179,
+                    "Name": "Running"
+                }
+            ],
+            "Groups": [],
+            "OrganizationId": 17659,
+            "RegistrationPeriods": [],
+            "LocationLabel": "",
+            "Forms": [
+                {
+                    "Id": 50963,
+                    "Type": "Adult",
+                    "Name": "Default adult form"
+                },
+                {
+                    "Id": 50964,
+                    "Type": "Children",
+                    "Name": "Default child form"
+                }
+            ],
+            "SecretUrl": "https://app.amilia.com/store/en/create-makerspace/api/Activity/Detail?activityId=xpvJ1ld",
+            "PictureUrl": "https://deaf53fa76627137549f-e85eb775d5f763aec693aeda177760f9.ssl.cf2.rackcdn.com//b3ff5502-40fd-4811-a287-3c170d249495_Square_Cutting_Board_1.jpg",
+            "Schedules": [
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:00:00",
+                        "StartDate": "2024-10-06T00:00:00",
+                        "EndDate": "2024-10-06T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68613657,
+                            "FirstName": "Burke",
+                            "LastName": "McGuinness",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923752,
+                            "Name": "Wood shop"
+                        }
+                    ]
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:00:00",
+                        "StartDate": "2024-10-20T00:00:00",
+                        "EndDate": "2024-10-20T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68613657,
+                            "FirstName": "Burke",
+                            "LastName": "McGuinness",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923752,
+                            "Name": "Wood shop"
+                        }
+                    ]
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:00:00",
+                        "StartDate": "2024-10-27T00:00:00",
+                        "EndDate": "2024-10-27T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68613657,
+                            "FirstName": "Burke",
+                            "LastName": "McGuinness",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923752,
+                            "Name": "Wood shop"
+                        }
+                    ]
+                }
+            ],
+            "Id": 5525738,
+            "Name": "Wood Tools Level 2 & Cutting Board",
+            "ProgramId": 107638,
+            "ProgramName": "Classes and Workshops",
+            "CategoryId": 5525740,
+            "CategoryName": "Wood Shop",
+            "SubCategoryId": 5525742,
+            "SubCategoryName": "Project Classes",
+            "Url": "https://app.amilia.com/store/en/create-makerspace/shop/activities/5525738",
+            "Status": "Normal"
+        },
+        {
+            "Tags": [],
+            "Description": "",
+            "Prerequisite": "",
+            "Note": null,
+            "ThirdPartyUrl": null,
+            "AdditionalInformation": "",
+            "ResponsibleName": "",
+            "Price": 450.0000,
+            "DropInPrice": 0.0,
+            "DisplayOrder": 2,
+            "Age": {
+                "Max": 16,
+                "Min": 13,
+                "Months": false
+            },
+            "MaxAttendance": 8,
+            "SpotsRemaining": 8,
+            "SpotsReserved": 0,
+            "NumberOfOccurrences": 7,
+            "StartDate": "2024-10-28T15:30:00-07:00",
+            "EndDate": "2024-12-16T18:00:00-08:00",
+            "ScheduleSummary": "Mondays, 3:30 PM - 6:00 PM",
+            "HasSessionEnabled": true,
+            "HasDropInEnabled": false,
+            "AgeSummary": "13-16",
+            "Keywords": [],
+            "Groups": [],
+            "OrganizationId": 17659,
+            "RegistrationPeriods": [],
+            "LocationLabel": "",
+            "Forms": [
+                {
+                    "Id": 50963,
+                    "Type": "Adult",
+                    "Name": "Default adult form"
+                },
+                {
+                    "Id": 52612,
+                    "Type": "Children",
+                    "Name": "Child (after school program) form"
+                }
+            ],
+            "SecretUrl": "https://app.amilia.com/store/en/create-makerspace/api/Activity/Detail?activityId=ydzJ6An",
+            "PictureUrl": "https://eb9ea0dd472f9051d7ee-4cc8a3f321d3ea7e4b05f36d39200b40.ssl.cf2.rackcdn.com//da53d8e2-489b-419c-9b4b-eae6c668eb82_robotics_kids_3.avif",
+            "Schedules": [
+                {
+                    "TimePeriod": {
+                        "StartTime": "15:30:00",
+                        "EndTime": "18:00:00",
+                        "StartDate": "2024-10-28T00:00:00",
+                        "EndDate": null,
+                        "NumberOfOccurence": 8,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "RepeatNTimes",
+                        "Days": [
+                            "Monday"
+                        ],
+                        "RecurrenceUnitType": "week",
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68825859,
+                            "FirstName": "Gabriel",
+                            "LastName": "Robinson-Leith",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923755,
+                            "Name": "Textiles studio"
+                        }
+                    ]
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "15:30:00",
+                        "EndTime": "18:00:00",
+                        "StartDate": "2024-11-25T00:00:00",
+                        "EndDate": "2024-11-25T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [],
+                    "Locations": []
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "15:30:00",
+                        "EndTime": "18:00:00",
+                        "StartDate": "2024-11-18T00:00:00",
+                        "EndDate": "2024-11-18T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [],
+                    "Locations": []
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "15:30:00",
+                        "EndTime": "18:00:00",
+                        "StartDate": "2024-11-11T00:00:00",
+                        "EndDate": "2024-11-11T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [],
+                    "Locations": []
+                }
+            ],
+            "Id": 5526065,
+            "Name": "Youth Robotics Program",
+            "ProgramId": 107638,
+            "ProgramName": "Classes and Workshops",
+            "CategoryId": 5485605,
+            "CategoryName": "Kids Classes",
+            "SubCategoryId": 5526071,
+            "SubCategoryName": "Robotics",
+            "Url": "https://app.amilia.com/store/en/create-makerspace/shop/activities/5526065",
+            "Status": "Normal"
+        },
+        {
+            "Tags": [],
+            "Description": "",
+            "Prerequisite": "",
+            "Note": null,
+            "ThirdPartyUrl": null,
+            "AdditionalInformation": "",
+            "ResponsibleName": "",
+            "Price": 275.0000,
+            "DropInPrice": 0.0,
+            "DisplayOrder": 2,
+            "Age": {
+                "Max": 15,
+                "Min": 10,
+                "Months": false
+            },
+            "MaxAttendance": 8,
+            "SpotsRemaining": 8,
+            "SpotsReserved": 0,
+            "NumberOfOccurrences": 5,
+            "StartDate": "2024-11-18T15:30:00-08:00",
+            "EndDate": "2024-12-16T18:00:00-08:00",
+            "ScheduleSummary": "Mondays, 3:30 PM - 6:00 PM",
+            "HasSessionEnabled": true,
+            "HasDropInEnabled": false,
+            "AgeSummary": "10-15",
+            "Keywords": [],
+            "Groups": [],
+            "OrganizationId": 17659,
+            "RegistrationPeriods": [
+                {
+                    "Id": 8333430,
+                    "StartTime": "2024-09-01T09:00:00-07:00",
+                    "EndTime": "2024-11-17T17:00:00-08:00",
+                    "RegistrationCriterionType": "Everyone",
+                    "ResidencyName": null
+                }
+            ],
+            "LocationLabel": "",
+            "Forms": [
+                {
+                    "Id": 50963,
+                    "Type": "Adult",
+                    "Name": "Default adult form"
+                },
+                {
+                    "Id": 50964,
+                    "Type": "Children",
+                    "Name": "Default child form"
+                }
+            ],
+            "SecretUrl": "https://app.amilia.com/store/en/create-makerspace/api/Activity/Detail?activityId=yvzO8DK",
+            "PictureUrl": "https://ba32666a096459845e3c-1db22070e32fe5be513d79e6800ae966.ssl.cf2.rackcdn.com//b923a365-7cbf-4e43-8f09-d001204c41f1_Woodworking_Summer_Camp2.jpg",
+            "Schedules": [
+                {
+                    "TimePeriod": {
+                        "StartTime": "15:30:00",
+                        "EndTime": "18:00:00",
+                        "StartDate": "2024-11-18T00:00:00",
+                        "EndDate": null,
+                        "NumberOfOccurence": 5,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "RepeatNTimes",
+                        "Days": [
+                            "Monday"
+                        ],
+                        "RecurrenceUnitType": "week",
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68556314,
+                            "FirstName": "Jason",
+                            "LastName": "Bigelow",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923752,
+                            "Name": "Wood shop"
+                        }
+                    ]
+                }
+            ],
+            "Id": 5537287,
+            "Name": "After School Woodworking Program (November 2024)",
+            "ProgramId": 107638,
+            "ProgramName": "Classes and Workshops",
+            "CategoryId": 5485605,
+            "CategoryName": "Kids Classes",
+            "SubCategoryId": 5485606,
+            "SubCategoryName": "Wood Shop",
+            "Url": "https://app.amilia.com/store/en/create-makerspace/shop/activities/5537287",
+            "Status": "Normal"
+        },
+        {
+            "Tags": [],
+            "Description": "",
+            "Prerequisite": "",
+            "Note": null,
+            "ThirdPartyUrl": null,
+            "AdditionalInformation": "",
+            "ResponsibleName": "",
+            "Price": 0.0000,
+            "DropInPrice": 120.0000,
+            "DisplayOrder": 5,
+            "Age": null,
+            "MaxAttendance": 2147483647,
+            "SpotsRemaining": null,
+            "SpotsReserved": 0,
+            "NumberOfOccurrences": 2,
+            "StartDate": "2024-10-30T18:00:00-07:00",
+            "EndDate": "2024-11-14T21:00:00-08:00",
+            "ScheduleSummary": "Wednesday, October 30, 2024, 6:00 PM - 9:00 PM, Thursday, November 14, 2024, 6:00 PM - 9:00 PM",
+            "HasSessionEnabled": false,
+            "HasDropInEnabled": true,
+            "AgeSummary": "",
+            "Keywords": [],
+            "Groups": [],
+            "OrganizationId": 17659,
+            "RegistrationPeriods": [],
+            "LocationLabel": "",
+            "Forms": [
+                {
+                    "Id": 50963,
+                    "Type": "Adult",
+                    "Name": "Default adult form"
+                },
+                {
+                    "Id": 50964,
+                    "Type": "Children",
+                    "Name": "Default child form"
+                }
+            ],
+            "SecretUrl": "https://app.amilia.com/store/en/create-makerspace/api/Activity/Detail?activityId=xB1ZA7N",
+            "PictureUrl": "https://fe175336afa5f4eb03cb-cf4999d5657b1a210410ce971761f53e.ssl.cf2.rackcdn.com//4a975c16-dfaf-4f3a-abe9-81ff48f0d072_wood_lathe.jpeg",
+            "Schedules": [
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:00:00",
+                        "StartDate": "2024-10-30T00:00:00",
+                        "EndDate": "2024-10-30T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68660904,
+                            "FirstName": "Ryan",
+                            "LastName": "Fletcher",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923752,
+                            "Name": "Wood shop"
+                        }
+                    ]
+                },
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:00:00",
+                        "StartDate": "2024-11-14T00:00:00",
+                        "EndDate": "2024-11-14T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 68660904,
+                            "FirstName": "Ryan",
+                            "LastName": "Fletcher",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923752,
+                            "Name": "Wood shop"
+                        }
+                    ]
+                }
+            ],
+            "Id": 5550288,
+            "Name": "Wood Lathe Level 1",
+            "ProgramId": 107638,
+            "ProgramName": "Classes and Workshops",
+            "CategoryId": 5525740,
+            "CategoryName": "Wood Shop",
+            "SubCategoryId": 5525741,
+            "SubCategoryName": "Skill classes",
+            "Url": "https://app.amilia.com/store/en/create-makerspace/shop/activities/5550288",
+            "Status": "Normal"
+        },
+        {
+            "Tags": [],
+            "Description": "",
+            "Prerequisite": "None",
+            "Note": null,
+            "ThirdPartyUrl": null,
+            "AdditionalInformation": "",
+            "ResponsibleName": "",
+            "Price": 0.0000,
+            "DropInPrice": 280.0000,
+            "DisplayOrder": 2,
+            "Age": null,
+            "MaxAttendance": 2147483647,
+            "SpotsRemaining": null,
+            "SpotsReserved": 0,
+            "NumberOfOccurrences": 1,
+            "StartDate": "2024-11-18T18:00:00-08:00",
+            "EndDate": "2024-11-18T21:00:00-08:00",
+            "ScheduleSummary": "Monday, November 18, 2024, 6:00 PM - 9:00 PM",
+            "HasSessionEnabled": false,
+            "HasDropInEnabled": true,
+            "AgeSummary": "",
+            "Keywords": [
+                {
+                    "Id": 82,
+                    "Name": "Skiing"
+                }
+            ],
+            "Groups": [],
+            "OrganizationId": 17659,
+            "RegistrationPeriods": [
+                {
+                    "Id": 8355919,
+                    "StartTime": "2024-10-01T09:00:00-07:00",
+                    "EndTime": "2030-12-31T17:00:00-08:00",
+                    "RegistrationCriterionType": "Everyone",
+                    "ResidencyName": null
+                }
+            ],
+            "LocationLabel": "",
+            "Forms": [
+                {
+                    "Id": 50963,
+                    "Type": "Adult",
+                    "Name": "Default adult form"
+                },
+                {
+                    "Id": 50964,
+                    "Type": "Children",
+                    "Name": "Default child form"
+                }
+            ],
+            "SecretUrl": "https://app.amilia.com/store/en/create-makerspace/api/Activity/Detail?activityId=bDEpdqN",
+            "PictureUrl": "https://fc3d4ab3209fd94aaf47-b7eb68a589bb36434dcc7acf203794ec.ssl.cf2.rackcdn.com//b3f3a28c-2ef8-4602-9602-02c1097b5c55_ski_tuning1.jpg",
+            "Schedules": [
+                {
+                    "TimePeriod": {
+                        "StartTime": "18:00:00",
+                        "EndTime": "21:00:00",
+                        "StartDate": "2024-11-18T00:00:00",
+                        "EndDate": "2024-11-18T00:00:00",
+                        "NumberOfOccurence": null,
+                        "RecurrenceEndDate": null,
+                        "TimeZone": "Pacific Standard Time",
+                        "TimePeriodType": "Interval",
+                        "Days": [],
+                        "RecurrenceUnitType": null,
+                        "MonthType": null
+                    },
+                    "Staff": [
+                        {
+                            "Object": "Person",
+                            "Id": 69173459,
+                            "FirstName": "Sarah",
+                            "LastName": "Frost",
+                            "State": "Normal"
+                        }
+                    ],
+                    "Locations": [
+                        {
+                            "Id": 1923751,
+                            "Name": "Metal shop"
+                        }
+                    ]
+                }
+            ],
+            "Id": 5553720,
+            "Name": "Ski Tuning Workshop",
+            "ProgramId": 107638,
+            "ProgramName": "Classes and Workshops",
+            "CategoryId": 5525637,
+            "CategoryName": "Metal Shop",
+            "SubCategoryId": 5525638,
+            "SubCategoryName": "Skill classes",
+            "Url": "https://app.amilia.com/store/en/create-makerspace/shop/activities/5553720",
+            "Status": "Normal"
+        }
+    ],
+    "Paging": {
+        "TotalCount": 15,
+        "Next": ""
+    }
+}
