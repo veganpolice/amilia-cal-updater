@@ -102,3 +102,61 @@ const UpdatePage: React.FC<UpdatePageProps> = ({ onClassesUpdate }) => {
                 Password
               </label>
               <div className="relative">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <Lock className="h-5 w-5 text-gray-400" />
+                </div>
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  required
+                  className="appearance-none rounded-none relative block w-full px-3 py-2 pl-10 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm"
+                  placeholder="Password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="flex gap-4">
+            <button
+              type="submit"
+              disabled={isLoading || isAuthenticated}
+              className={`group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white ${
+                isAuthenticated
+                  ? 'bg-green-600'
+                  : 'bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary'
+              }`}
+            >
+              {isLoading ? (
+                <Loader2 className="animate-spin h-5 w-5" />
+              ) : isAuthenticated ? (
+                'Authenticated'
+              ) : (
+                'Authenticate with Amilia'
+              )}
+            </button>
+
+            {isAuthenticated && (
+              <button
+                type="button"
+                onClick={fetchClasses}
+                disabled={isLoading}
+                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+              >
+                {isLoading ? (
+                  <Loader2 className="animate-spin h-5 w-5" />
+                ) : (
+                  'Get Amilia Classes'
+                )}
+              </button>
+            )}
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default UpdatePage;
