@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Lock, Mail, Loader2 } from 'lucide-react';
 
 const UpdatePage: React.FC = () => {
@@ -7,13 +7,6 @@ const UpdatePage: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    const token = localStorage.getItem('jwt_token');
-    if (token) {
-      setIsAuthenticated(true);
-    }
-  }, []);
 
   const handleAuthentication = async (e: React.FormEvent) => {
     e.preventDefault();
