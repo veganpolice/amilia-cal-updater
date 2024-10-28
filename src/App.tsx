@@ -9,7 +9,6 @@ import { generateOccurrences } from './utils/dateUtils';
 import { downloadIcsFile } from './utils/icsUtils';
 
 const App: React.FC = () => {
-  const [jsonInput, setJsonInput] = useState('');
   const [activities, setActivities] = useState<Activity[]>([]);
   const [occurrences, setOccurrences] = useState<ActivityOccurrence[]>([]);
   const [error, setError] = useState<string | null>(null);
@@ -37,28 +36,6 @@ const App: React.FC = () => {
     }
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    try {
-      const parsed = JSON.parse(jsonInput) as AmiliaResponse;
-      const sortedActivities = [...parsed.Items].sort((a, b) => 
-        new Date(a.StartDate).getTime() - new Date(b.StartDate).getTime()
-      );
-      setActivities(sortedActivities);
-      
-      const allOccurrences = sortedActivities.flatMap(activity => 
-        generateOccurrences(activity)
-      );
-      setOccurrences(allOccurrences);
-      setError(null);
-    } catch (err) {
-      console.error('Parsing error:', err);
-      setError('Invalid JSON format. Please check your input.');
-      setActivities([]);
-      setOccurrences([]);
-    }
-  };
-
   const handleDownloadIcs = () => {
     if (occurrences.length === 0) {
       setError('No activities to download');
@@ -71,11 +48,11 @@ const App: React.FC = () => {
     <ErrorBoundary>
       <div className="min-h-screen bg-gray-50">
         <div className="main-container">
-          <div className="flex justify-between items-center mb-8">
-            <h1 className="page-title">Create Makerspace Classes</h1>
+          <div className="flex flex-col gap-6 mb-8">
+            <h1 className="page-title mb-0">Create Makerspace Calendar Generator</h1>
             <button
               onClick={() => setViewMode(viewMode === 'update' ? 'calendar' : 'update')}
-              className="action-button"
+              className="action-button w-fit"
             >
               {viewMode === 'update' ? 'Back to Calendar' : 'Update Classes'}
             </button>
@@ -125,6 +102,12 @@ const App: React.FC = () => {
                     >
                       <CalendarDays size={20} /> Calendar View
                     </button>
+                    <button
+                      onClick={handleDownloadIcs}
+                      className="view-button ml-auto"
+                    >
+                      <Download size={20} /> Download Calendar
+                    </button>
                   </div>
 
                   {viewMode === 'list' ? (
@@ -138,32 +121,6 @@ const App: React.FC = () => {
                   )}
                 </div>
               )}
-              
-              <form onSubmit={handleSubmit} className="mt-12 pt-8 border-t border-gray-200">
-                <h2 className="text-2xl font-semibold text-cms-black mb-4">Update Activities</h2>
-                <textarea
-                  value={jsonInput}
-                  onChange={(e) => setJsonInput(e.target.value)}
-                  className="textarea-input"
-                  placeholder="Paste the JSON response from the Amilia API here"
-                />
-                
-                <div className="flex gap-3">
-                  <button
-                    type="submit"
-                    className="action-button"
-                  >
-                    <Upload size={20} /> Update events
-                  </button>
-                  <button
-                    type="button"
-                    onClick={handleDownloadIcs}
-                    className="action-button ml-auto"
-                  >
-                    <Download size={20} /> Download Calendar
-                  </button>
-                </div>
-              </form>
             </>
           )}
         </div>
