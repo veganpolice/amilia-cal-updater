@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { CalendarDays, Upload, List, Download } from 'lucide-react';
 import ErrorBoundary from './components/ErrorBoundary';
 import Calendar from './components/Calendar';
@@ -15,11 +15,6 @@ const App: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<'list' | 'calendar' | 'update'>('calendar');
   const [currentMonth, setCurrentMonth] = useState(new Date());
-
-  useEffect(() => {
-    // Load example data on component mount
-    handleExampleData();
-  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -40,32 +35,6 @@ const App: React.FC = () => {
       setError('Invalid JSON format. Please check your input.');
       setActivities([]);
       setOccurrences([]);
-    }
-  };
-
-  const handleExampleData = async () => {
-    try {
-      const response = await fetch('/activities.json');
-      if (!response.ok) throw new Error('Failed to fetch example data');
-      const data = await response.text();
-      
-      const formattedJson = JSON.stringify(JSON.parse(data), null, 2);
-      setJsonInput(formattedJson);
-      
-      const parsed = JSON.parse(data) as AmiliaResponse;
-      const sortedActivities = [...parsed.Items].sort((a, b) => 
-        new Date(a.StartDate).getTime() - new Date(b.StartDate).getTime()
-      );
-      setActivities(sortedActivities);
-      
-      const allOccurrences = sortedActivities.flatMap(activity => 
-        generateOccurrences(activity)
-      );
-      setOccurrences(allOccurrences);
-      setError(null);
-    } catch (err) {
-      console.error('Failed to load example data:', err);
-      setError('Failed to load example data');
     }
   };
 
