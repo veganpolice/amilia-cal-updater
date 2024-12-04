@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Lock, Mail, Loader2 } from 'lucide-react';
 import { AmiliaResponse } from '../types';
+import ManualInput from './ManualInput';
 
 interface UpdatePageProps {
   onClassesUpdate: (classes: AmiliaResponse) => void;
@@ -67,15 +68,15 @@ const UpdatePage: React.FC<UpdatePageProps> = ({ onClassesUpdate }) => {
   };
 
   return (
-    <div className="flex items-center justify-center">
-      <div className="max-w-md w-full space-y-8">
+    <div className="flex flex-col gap-8 items-center justify-center">
+      <div className="max-w-md w-full">
         {error && (
-          <div className="bg-red-50 text-red-600 p-4 rounded-md border border-red-200">
+          <div className="bg-red-50 text-red-600 p-4 rounded-md border border-red-200 mb-6">
             {error}
           </div>
         )}
 
-        <form className="space-y-6" onSubmit={handleAuthentication}>
+        <form className="space-y-6 mb-8" onSubmit={handleAuthentication}>
           <div className="rounded-md shadow-sm -space-y-px">
             <div>
               <label htmlFor="email" className="sr-only">
@@ -154,6 +155,19 @@ const UpdatePage: React.FC<UpdatePageProps> = ({ onClassesUpdate }) => {
             )}
           </div>
         </form>
+
+        <div className="relative">
+          <div className="absolute inset-0 flex items-center">
+            <div className="w-full border-t border-gray-300"></div>
+          </div>
+          <div className="relative flex justify-center text-sm">
+            <span className="px-2 bg-cms-white text-gray-500">Or</span>
+          </div>
+        </div>
+
+        <div className="mt-8">
+          <ManualInput onDataLoad={onClassesUpdate} />
+        </div>
       </div>
     </div>
   );
