@@ -1,6 +1,6 @@
 import { Activity, ActivityOccurrence } from '../types';
 
-export const parseScheduleDays = (summary: string): { day: number; date?: Date }[] => {
+export const parseScheduleDays = (summary: string): { day: number; date?: Date; time?: { start: string; end: string } }[] => {
   const days = {
     sunday: 0, sun: 0,
     monday: 1, mon: 1,
@@ -11,18 +11,33 @@ export const parseScheduleDays = (summary: string): { day: number; date?: Date }
     saturday: 6, sat: 6
   };
 
-  // Try to match specific dates first (e.g., "Thursday, November 14, 2024")
-  const datePattern = /([A-Za-z]+day),\s+([A-Za-z]+)\s+(\d{1,2}),\s+(\d{4})/gi;
-  const dateMatches = [...summary.matchAll(datePattern)];
+  // Try to match specific dates with times first
+  const dateTimePattern = /([A-Za-z]+day),\s+([A-Za-z]+)\s+(\d{1,2}),\s+(\d{4})[^]*?(\d{1,2}:\d{2}\s*(?:AM|PM))\s*(?:-|to)\s*(\d{1,2}:\d{2}\s*(?:AM|PM))/gi;
+  const dateTimeMatches = [...summary.matchAll(dateTimePattern)];
   
-  if (dateMatches.length > 0) {
-    return dateMatches.map(match => {
+  if (dateTimeMatches.length > 0) {
+    return dateTimeMatches.map(match => {
       const date = new Date(`${match[2]} ${match[3]}, ${match[4]}`);
-      return !isNaN(date.getTime()) ? { day: date.getDay(), date } : null;
-    }).filter((item): item is { day: number; date: Date } => item !== null);
+      if (!isNaN(date.getTime())) {
+        const formatTime = (time: string) => {
+          const [hours, minutesPeriod] = time.split(':');
+          const [minutes, period] = minutesPeriod.split(/\s+/);
+          return minutes === '00' ? `${hours}${period.toLowerCase()}` : `${hours}:${minutes}${period.toLowerCase()}`;
+        };
+        return {
+          day: date.getDay(),
+          date,
+          time: {
+            start: formatTime(match[5].trim()),
+            end: formatTime(match[6].trim())
+          }
+        };
+      }
+      return null;
+    }).filter((item): item is { day: number; date: Date; time: { start: string; end: string } } => item !== null);
   }
 
-  // If no specific dates, look for recurring days
+  // If no specific dates with times, look for recurring days
   const scheduleDays: { day: number }[] = [];
   const lowercaseSummary = summary.toLowerCase();
 
@@ -59,7 +74,34 @@ export const parseScheduleDays = (summary: string): { day: number; date?: Date }
   return scheduleDays;
 };
 
-export const parseScheduleTime = (summary: string): { start: string; end: string } | null => {
+export const parseScheduleTime = (summary: string, date?: Date): { start: string; end: string } | null => {
+  // If we have a specific date, try to find time associated with that date first
+  if (date) {
+    const dateStr = date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+    const dateSection = summary.split(/(?=[A-Z][a-z]+day)/).find(section => 
+      section.includes(dateStr)
+    );
+    
+    if (dateSection) {
+      const timePattern = /(\d{1,2}:\d{2}\s*(?:AM|PM))\s*(?:-|to)\s*(\d{1,2}:\d{2}\s*(?:AM|PM))/i;
+      const match = dateSection.match(timePattern);
+      
+      if (match) {
+        const formatTime = (time: string) => {
+          const [hours, minutesPeriod] = time.split(':');
+          const [minutes, period] = minutesPeriod.split(/\s+/);
+          return minutes === '00' ? `${hours}${period.toLowerCase()}` : `${hours}:${minutes}${period.toLowerCase()}`;
+        };
+
+        return {
+          start: formatTime(match[1].trim()),
+          end: formatTime(match[2].trim())
+        };
+      }
+    }
+  }
+
+  // Fall back to general time pattern if no specific date time found
   const timePattern = /(\d{1,2}:\d{2}\s*(?:AM|PM))\s*(?:-|to)\s*(\d{1,2}:\d{2}\s*(?:AM|PM))/i;
   const match = summary.match(timePattern);
   
@@ -105,22 +147,16 @@ export const getStaffForDate = (activity: Activity, date: Date) => {
 export const generateOccurrences = (activity: Activity): ActivityOccurrence[] => {
   const occurrences: ActivityOccurrence[] = [];
   const scheduleDays = parseScheduleDays(activity.ScheduleSummary);
-  const scheduleTime = parseScheduleTime(activity.ScheduleSummary);
 
-  if (!scheduleTime) {
-    console.warn(`No time found in schedule summary for activity: ${activity.Name}`);
-    return [];
-  }
-
-  // For activities with specific dates
-  const specificDates = scheduleDays.filter(d => d.date);
+  // For activities with specific dates and times
+  const specificDates = scheduleDays.filter(d => d.date && d.time);
   if (specificDates.length > 0) {
-    return specificDates.map(({ date }) => {
+    return specificDates.map(({ date, time }) => {
       const staff = getStaffForDate(activity, date!);
       return {
         ...activity,
         date: date!,
-        timeRange: scheduleTime,
+        timeRange: time!,
         Staff: staff ? [staff] : []
       };
     });
@@ -136,13 +172,16 @@ export const generateOccurrences = (activity: Activity): ActivityOccurrence[] =>
   while (currentDate <= endDate) {
     const currentDay = currentDate.getDay();
     if (scheduleDays.some(d => d.day === currentDay)) {
-      const staff = getStaffForDate(activity, currentDate);
-      occurrences.push({
-        ...activity,
-        date: new Date(currentDate),
-        timeRange: scheduleTime,
-        Staff: staff ? [staff] : []
-      });
+      const scheduleTime = parseScheduleTime(activity.ScheduleSummary, currentDate);
+      if (scheduleTime) {
+        const staff = getStaffForDate(activity, currentDate);
+        occurrences.push({
+          ...activity,
+          date: new Date(currentDate),
+          timeRange: scheduleTime,
+          Staff: staff ? [staff] : []
+        });
+      }
     }
     currentDate.setDate(currentDate.getDate() + 1);
   }
