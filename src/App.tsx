@@ -7,6 +7,7 @@ import UpdatePage from './components/UpdatePage';
 import { Activity, AmiliaResponse, ActivityOccurrence } from './types';
 import { generateOccurrences } from './utils/dateUtils';
 import { downloadIcsFile } from './utils/icsUtils';
+import { isEventVisible } from './utils/eventUtils';
 
 const App: React.FC = () => {
   const [activities, setActivities] = useState<Activity[]>([]);
@@ -20,7 +21,8 @@ const App: React.FC = () => {
     if (storedClasses) {
       try {
         const parsed = JSON.parse(storedClasses) as AmiliaResponse;
-        const sortedActivities = [...parsed.Items].sort((a, b) => 
+        const visibleActivities = parsed.Items.filter(isEventVisible);
+        const sortedActivities = [...visibleActivities].sort((a, b) => 
           new Date(a.StartDate).getTime() - new Date(b.StartDate).getTime()
         );
         setActivities(sortedActivities);
@@ -61,7 +63,8 @@ const App: React.FC = () => {
           {viewMode === 'update' ? (
             <UpdatePage onClassesUpdate={(classes) => {
               localStorage.setItem('amilia-classes', JSON.stringify(classes));
-              const sortedActivities = [...classes.Items].sort((a, b) => 
+              const visibleActivities = classes.Items.filter(isEventVisible);
+              const sortedActivities = [...visibleActivities].sort((a, b) => 
                 new Date(a.StartDate).getTime() - new Date(b.StartDate).getTime()
               );
               setActivities(sortedActivities);
