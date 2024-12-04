@@ -11,26 +11,50 @@ export const parseScheduleDays = (summary: string): { day: number; date?: Date }
     saturday: 6, sat: 6
   };
 
-  // Try to match a specific date first (e.g., "Thursday, November 14, 2024")
-  const datePattern = /([A-Za-z]+day),\s+([A-Za-z]+)\s+(\d{1,2}),\s+(\d{4})/i;
-  const dateMatch = summary.match(datePattern);
+  // Try to match specific dates first (e.g., "Thursday, November 14, 2024")
+  const datePattern = /([A-Za-z]+day),\s+([A-Za-z]+)\s+(\d{1,2}),\s+(\d{4})/gi;
+  const dateMatches = [...summary.matchAll(datePattern)];
   
-  if (dateMatch) {
-    const date = new Date(`${dateMatch[2]} ${dateMatch[3]}, ${dateMatch[4]}`);
-    if (!isNaN(date.getTime())) {
-      return [{ day: date.getDay(), date }];
-    }
+  if (dateMatches.length > 0) {
+    return dateMatches.map(match => {
+      const date = new Date(`${match[2]} ${match[3]}, ${match[4]}`);
+      return !isNaN(date.getTime()) ? { day: date.getDay(), date } : null;
+    }).filter((item): item is { day: number; date: Date } => item !== null);
   }
 
-  // If no specific date, look for recurring days
+  // If no specific dates, look for recurring days
   const scheduleDays: { day: number }[] = [];
   const lowercaseSummary = summary.toLowerCase();
 
-  Object.entries(days).forEach(([day, value]) => {
-    if (lowercaseSummary.includes(day)) {
-      scheduleDays.push({ day: value });
+  // Look for day ranges (e.g., "Monday to Friday" or "Monday - Friday")
+  const rangePattern = /([a-z]+day)\s*(?:to|-)\s*([a-z]+day)/gi;
+  const rangeMatches = [...lowercaseSummary.matchAll(rangePattern)];
+
+  for (const match of rangeMatches) {
+    const startDay = Object.entries(days).find(([day]) => match[1].includes(day.toLowerCase()))?.[1];
+    const endDay = Object.entries(days).find(([day]) => match[2].includes(day.toLowerCase()))?.[1];
+    
+    if (startDay !== undefined && endDay !== undefined) {
+      let currentDay = startDay;
+      while (currentDay !== endDay) {
+        scheduleDays.push({ day: currentDay });
+        currentDay = (currentDay + 1) % 7;
+      }
+      scheduleDays.push({ day: endDay });
     }
-  });
+  }
+
+  // Look for individual days if no ranges were found
+  if (scheduleDays.length === 0) {
+    Object.entries(days).forEach(([day, value]) => {
+      if (lowercaseSummary.includes(day)) {
+        // Avoid duplicates
+        if (!scheduleDays.some(d => d.day === value)) {
+          scheduleDays.push({ day: value });
+        }
+      }
+    });
+  }
 
   return scheduleDays;
 };
@@ -88,16 +112,18 @@ export const generateOccurrences = (activity: Activity): ActivityOccurrence[] =>
     return [];
   }
 
-  // For activities with a specific date
-  const specificDate = scheduleDays.find(d => d.date);
-  if (specificDate?.date) {
-    const staff = getStaffForDate(activity, specificDate.date);
-    return [{
-      ...activity,
-      date: specificDate.date,
-      timeRange: scheduleTime,
-      Staff: staff ? [staff] : []
-    }];
+  // For activities with specific dates
+  const specificDates = scheduleDays.filter(d => d.date);
+  if (specificDates.length > 0) {
+    return specificDates.map(({ date }) => {
+      const staff = getStaffForDate(activity, date!);
+      return {
+        ...activity,
+        date: date!,
+        timeRange: scheduleTime,
+        Staff: staff ? [staff] : []
+      };
+    });
   }
 
   // For recurring activities
