@@ -21,6 +21,7 @@ export interface Schedule {
     MonthType: string | null;
   };
   Staff: Staff[];
+  Status?: string;
   Locations: {
     Id: number;
     Name: string;
@@ -32,6 +33,7 @@ export interface Activity {
   StartDate: string;
   EndDate: string;
   ScheduleSummary: string;
+  Status?: string;
   Url: string;
   Schedules: Schedule[];
 }
